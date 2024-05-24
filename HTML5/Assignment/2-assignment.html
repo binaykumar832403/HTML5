@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    padding: 10px;
+}
+.item{
+    flex: calc(33.33% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.item img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+/* responsive design */
+@media(max-width:1200px)
+{
+    .item{
+        flex:calc(50%-20px);
+    }
+}
+@media (max-width:768px)
+ {
+  .item{
+    flex:calc(100%-20px);  
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="item">
+           <img src="images/back-photo.jpg" alt=""/></div>
+        <div class="item">
+            <img src="images/back-photo.jpg" alt=""/></div>
+        <div class="item">
+            <img src="images/back-photo.jpg" alt=""/></div>
+        <div class="item">
+            <img src="images/back-photo.jpg" alt=""/></div>
+        <div class="item">
+            <img src="images/back-photo.jpg" alt=""/></div>
+        <div class="item">
+            <img src="images/back-photo.jpg" alt=""/></div>
+        <div class="item">
+            <img src="images/back-photo.jpg" alt=""/></div>
+        <div class="item">
+            <img src="images/back-photo.jpg" alt=""/></div>       
+                                                
+    </div>
+</body>
+</html>
