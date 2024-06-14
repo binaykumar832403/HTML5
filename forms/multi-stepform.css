@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .field {
+    background-color: beige;
+    color: rgb(46, 12, 168);
+  }
+  label{
+    display: block;
+    margin-top: 20px;
+    
+  }
+  fieldset{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"]{
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+  }
+  
